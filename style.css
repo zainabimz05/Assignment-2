@@ -253,3 +253,23 @@ nav {
     color: var(--primary);
     font-weight: 600;
 }
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.15);
+}
+
+.project-btn {
+    display: inline-block;
+    margin: 20px 0 25px;
+    padding: 12px 24px;
+    background: var(--primary);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
