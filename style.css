@@ -202,3 +202,54 @@ nav {
     box-shadow: 0 12px 25px rgba(37, 99, 235, 0.15);
     color: var(--primary);
 }
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+#projects {
+    background: white;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.2rem;
+    color: var(--secondary);
+    margin-bottom: 50px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #f8fafc;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+.project-card h3 {
+    margin: 20px 0 10px;
+    color: var(--secondary);
+}
+
+.project-card p {
+    color: var(--gray);
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.tech-stack {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--primary);
+    font-weight: 600;
+}
