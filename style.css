@@ -54,30 +54,33 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 40px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 20px 10%;
 }
 
 .logo h2 {
     color: var(--primary);
+    font-size: 1.8rem;
 }
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 2rem;
 }
 
 .nav-links a {
     color: var(--dark);
     font-weight: 500;
-    transition: .3s;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -86,9 +89,9 @@ nav {
 
 .menu-btn {
     display: none;
-    border: none;
     background: none;
-    font-size: 28px;
+    border: none;
+    font-size: 1.8rem;
     cursor: pointer;
 }
 /* =========================
@@ -124,6 +127,7 @@ nav {
     color: var(--gray);
     font-size: 1.1rem;
     margin-bottom: 35px;
+    line-height: 1.8;
 }
 
 .hero-content a {
@@ -133,7 +137,7 @@ nav {
     padding: 14px 32px;
     border-radius: 8px;
     font-weight: 600;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .hero-content a:hover {
