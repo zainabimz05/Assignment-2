@@ -324,3 +324,18 @@ form button {
 form button:hover {
     background: #1d4ed8;
 }
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
