@@ -166,3 +166,39 @@ nav {
     font-size: 1.1rem;
     line-height: 1.8;
 }
+/* =========================
+   SKILLS SECTION
+========================= */
+
+#skills {
+    background: #f8fafc;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.2rem;
+    color: var(--secondary);
+    margin-bottom: 50px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.15);
+    color: var(--primary);
+}
