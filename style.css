@@ -273,3 +273,54 @@ nav {
     background: #1d4ed8;
     transform: scale(1.05);
 }
+/* =========================
+   CONTACT SECTION
+========================= */
+
+#contact {
+    background: #f8fafc;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.2rem;
+    color: var(--secondary);
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+form button {
+    background: var(--primary);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #1d4ed8;
+}
