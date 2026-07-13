@@ -1,27 +1,60 @@
+
 // Smooth scrolling for navigation links
 
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
+document.querySelectorAll("nav a").forEach(link => {
 
-        const target = document.querySelector(this.getAttribute('href'));
+    link.addEventListener("click", function(event) {
 
-        target.scrollIntoView({
-            behavior: 'smooth'
-        });
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if (target) {
+            event.preventDefault();
+
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
     });
+
 });
+
+
+// Mobile Menu Toggle
+
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+});
+
+
+// Contact Form Handling
+
 const form = document.querySelector("form");
 
-form.addEventListener("submit", function (e) {
+form.addEventListener("submit", function(event) {
 
-    const name = document.querySelector("#name").value.trim();
-    const email = document.querySelector("#email").value.trim();
-    const message = document.querySelector("#message").value.trim();
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
 
     if (name === "" || email === "" || message === "") {
-        e.preventDefault();
+
         alert("Please fill in all fields.");
+
+    } else {
+
+        alert(`Thank you, ${name}! Your message has been sent.`);
+
+        form.reset();
+
     }
 
 });
